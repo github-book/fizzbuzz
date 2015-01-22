@@ -7,7 +7,7 @@ class Fizzbuzz
     elsif number % 5 == 0
       'buzz'
     elsif number % 7 == 0
-      'Github'
+      'GitHub'
     else
       number
     end
