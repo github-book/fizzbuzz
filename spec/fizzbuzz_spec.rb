@@ -22,6 +22,8 @@ describe Fizzbuzz do
   end
   context 'GitHub number' do
     it { subject.calculate(7).should eq 'GitHub' }
-    it { subject.calculate(14).should eq 'GitHub' }
+    it { subject.calculate(27).should eq 'GitHub' }
+    it { subject.calculate(75).should eq 'GitHub' }
+    it { subject.calculate(77).should eq 'GitHub' }
   end
 end
