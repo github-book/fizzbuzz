@@ -13,3 +13,4 @@ class Fizzbuzz
     end
   end
 end
+test
