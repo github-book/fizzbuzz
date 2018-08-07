@@ -2,22 +2,28 @@ require 'rspec'
 require 'fizzbuzz'
 
 describe Fizzbuzz do
+  context 'GitHub number' do
+    it { expect(subject.calculate(17)).to eq('GitHub') }
+    it { expect(subject.calculate(27)).to eq('GitHub') }
+    it { expect(subject.calculate(75)).to eq('GitHub') }
+    it { expect(subject.calculate(77)).to eq('GitHub') }
+  end
   context 'normal number' do
-    it { subject.calculate(1).should eq 1 }
-    it { subject.calculate(2).should eq 2 }
+    it { expect(subject.calculate(1)).to eq(1)}
+    it { expect(subject.calculate(2)).to eq(2) }
   end
   context 'Fizz number' do
-    it { subject.calculate(3).should eq 'fizz' }
-    it { subject.calculate(6).should eq 'fizz' }
-    it { subject.calculate(9).should eq 'fizz' }
+    it { expect(subject.calculate(3)).to eq('fizz') }
+    it { expect(subject.calculate(6)).to eq('fizz') }
+    it { expect(subject.calculate(9)).to eq('fizz') }
   end
   context 'buzz number' do
-    it { subject.calculate(5).should eq 'buzz' }
-    it { subject.calculate(10).should eq 'buzz' }
-    it { subject.calculate(20).should eq 'buzz' }
+    it { expect(subject.calculate(5)).to eq('buzz') }
+    it { expect(subject.calculate(10)).to eq('buzz') }
+    it { expect(subject.calculate(20)).to eq('buzz') }
   end
   context 'fizzbuzz  number' do
-    it { subject.calculate(15).should eq 'fizzbuzz' }
-    it { subject.calculate(30).should eq 'fizzbuzz' }
+    it { expect(subject.calculate(15)).to eq('fizzbuzz') }
+    it { expect(subject.calculate(30)).to eq('fizzbuzz') }
   end
 end
