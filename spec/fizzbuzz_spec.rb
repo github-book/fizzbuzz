@@ -2,6 +2,12 @@ require 'rspec'
 require 'fizzbuzz'
 
 describe Fizzbuzz do
+  context 'Github number' do
+    it{subject.calculate(17).should eq 'Github'}
+    it{subject.calculate(27).should eq 'Github'}
+    it{subject.calculate(75).should eq 'Github'}
+    it{subject.calculate(77).should eq 'Github'}
+  end
   context 'normal number' do
     it { subject.calculate(1).should eq 1 }
     it { subject.calculate(2).should eq 2 }
