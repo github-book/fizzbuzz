@@ -1,5 +1,5 @@
 require 'rspec'
-require 'fizzbuzz'
+require_relative '../lib/fizzbuzz.rb'
 
 describe Fizzbuzz do
   context 'normal number' do
@@ -19,5 +19,11 @@ describe Fizzbuzz do
   context 'fizzbuzz  number' do
     it { subject.calculate(15).should eq 'fizzbuzz' }
     it { subject.calculate(30).should eq 'fizzbuzz' }
+  end
+  context 'GitHub  number' do
+    it { subject.calculate(17).should eq 'GitHub' }
+    it { subject.calculate(27).should eq 'GitHub' }
+    it { subject.calculate(75).should eq 'GitHub' }
+    it { subject.calculate(77).should eq 'GitHub' }
   end
 end
