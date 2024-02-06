@@ -1,15 +1,15 @@
 class Fizzbuzz
   def calculate number
     if number % 3 == 0 && number % 5 == 0
-      'fizzbuzz'
+        'fizzbuzz'
     elsif number % 3 == 0
-      'fizz'
+        'fizz'
     elsif number % 5 == 0
-      'buzz'
+        'buzz'
     elsif number.to_s.include?'7'
-      'GitHub'
+        'GitHub'
     else
-      number
+        number
     end
   end
 end
