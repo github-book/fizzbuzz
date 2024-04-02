@@ -6,6 +6,12 @@ describe Fizzbuzz do
     it { subject.calculate(1).should eq 1 }
     it { subject.calculate(2).should eq 2 }
   end
+  context 'GitHub number' do
+    it { subject.calculate(17).should eq 'GitHub' }
+    it { subject.calculate(27).should eq 'GitHub' }
+    it { subject.calculate(75).should eq 'GitHub' }
+    it { subject.calculate(77).should eq 'GitHub' }
+  end
   context 'Fizz number' do
     it { subject.calculate(3).should eq 'fizz' }
     it { subject.calculate(6).should eq 'fizz' }
