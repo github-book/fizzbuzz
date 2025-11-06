@@ -6,6 +6,9 @@ class Fizzbuzz
       'fizz'
     elsif number % 5 == 0
       'buzz'
+    # 7が含まれる場合の処理
+    elsif number.to_s.include? '7'
+      'GitHub'
     else
       number
     end
