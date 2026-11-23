@@ -8,6 +8,8 @@ class Fizzbuzz
       'buzz'
     else
       number
+      elsif number.to_s.include? '7'
+      'GitHub'
     end
   end
 end
